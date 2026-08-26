@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Tasks - CheckMate</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="dashboard.html" class="sidebar-brand">
+        <img src="images/logo.png" alt="CheckMate Logo" class="sidebar-logo">
+        <div class="brand-text">Check<span>Mate</span></div>
+      </a>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link">
+          <div class="nav-item-left">
+            <span>📊</span> Dashboard
+          </div>
+        </a>
+
+        <a href="today.html" class="nav-link active">
+          <div class="nav-item-left">
+            <span>📅</span> Today's Tasks
+          </div>
+          <span class="badge">4</span>
+        </a>
+
+        <a href="overdue.html" class="nav-link">
+          <div class="nav-item-left">
+            <span>⚠️</span> Overdue
+          </div>
+          <span class="badge badge-danger">2</span>
+        </a>
+
+        <a href="tasks.html" class="nav-link">
+          <div class="nav-item-left">
+            <span>📋</span> All Tasks
+          </div>
+          <span class="badge">6</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="login.html" class="logout-link">
+          <span>🚪</span> Log Out
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+      
+      <!-- Top Header -->
+      <header class="top-header">
+        <h2>Today's Tasks</h2>
+        <div class="user-profile">
+          <div class="avatar">M</div>
+          <div class="user-info">
+            <div class="user-name">Merola Ehab</div>
+            <div class="user-role">My Tasks</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content Body -->
+      <main class="content-body">
+        
+        <!-- Daily Focus Banner -->
+        <div class="alert-banner alert-info">
+          <span class="alert-icon">💡</span>
+          <div>
+            <strong>Focus for Today:</strong> You have 4 tasks scheduled for completion before the end of the day.
+          </div>
+        </div>
+
+        <!-- Today Tasks List -->
+        <div class="tasks-card-list">
+          
+          <!-- Task 1 -->
+          <div class="task-item-card is-today">
+            <div class="task-item-main">
+              <input type="checkbox" class="task-checkbox">
+              <div>
+                <div class="task-title">Design Modern UI Layout</div>
+                <div class="task-desc">Finish CSS grids, flex layouts, and color variables.</div>
+              </div>
+            </div>
+            <div class="task-item-meta">
+              <span class="tag tag-priority-high">High Priority</span>
+              <span class="task-date">🕒 Due 5:00 PM</span>
+              <div class="task-actions">
+                <button class="btn-icon">✏️</button>
+                <button class="btn-icon delete">🗑️</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 2 -->
+          <div class="task-item-card is-today">
+            <div class="task-item-main">
+              <input type="checkbox" class="task-checkbox">
+              <div>
+                <div class="task-title">Prepare Weekly Presentation Slides</div>
+                <div class="task-desc">Review slides covering project roadmap and milestones.</div>
+              </div>
+            </div>
+            <div class="task-item-meta">
+              <span class="tag tag-priority-medium">Medium Priority</span>
+              <span class="task-date">🕒 Due 8:00 PM</span>
+              <div class="task-actions">
+                <button class="btn-icon">✏️</button>
+                <button class="btn-icon delete">🗑️</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 3 -->
+          <div class="task-item-card is-today">
+            <div class="task-item-main">
+              <input type="checkbox" class="task-checkbox">
+              <div>
+                <div class="task-title">Review Clean Code Structure</div>
+                <div class="task-desc">Organize CSS file headers, comments, and semantic HTML tags.</div>
+              </div>
+            </div>
+            <div class="task-item-meta">
+              <span class="tag tag-priority-low">Low Priority</span>
+              <span class="task-date">🕒 Due 10:00 PM</span>
+              <div class="task-actions">
+                <button class="btn-icon">✏️</button>
+                <button class="btn-icon delete">🗑️</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 4 (Completed) -->
+          <div class="task-item-card is-today" style="opacity: 0.75;">
+            <div class="task-item-main">
+              <input type="checkbox" class="task-checkbox" checked>
+              <div>
+                <div class="task-title" style="text-decoration: line-through; color: var(--text-muted);">Daily Standup Sync</div>
+                <div class="task-desc">Discussed frontend project requirements and deliverables.</div>
+              </div>
+            </div>
+            <div class="task-item-meta">
+              <span class="status-badge status-completed">✔ Done</span>
+              <span class="task-date">🕒 Completed 10:30 AM</span>
+              <div class="task-actions">
+                <button class="btn-icon">✏️</button>
+                <button class="btn-icon delete">🗑️</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
