@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - CheckMate</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+  <div class="auth-card">
+    <div class="auth-header">
+      <img src="images/logo.png" alt="CheckMate Logo" class="logo-img">
+      <h1>Welcome Back!</h1>
+      <p>Log in to manage your tasks and productivity.</p>
+    </div>
+
+    <form action="dashboard.html" method="GET" class="auth-form">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn-submit">Log In</button>
+    </form>
+
+    <div class="switch-auth">
+      Don't have an account? <a href="register.html">Create one</a>
+    </div>
+  </div>
+
+</body>
+</html>
